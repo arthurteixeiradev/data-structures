@@ -1,0 +1,19 @@
+Fila
+
+Critério de Inserção e Remoção
+
+FIFO: First In - First Out
+PEPS: Primeiro a Entrar - Primeiro a Sair
+
+Fila Dinamica
+
+Funções: 
+Criar - __init__
+Inserir - inserir_fim
+Remover - remover_inicio
+ver_primeiro
+
+Pode ter:
+esta_vazia
+esta_cheia
+show

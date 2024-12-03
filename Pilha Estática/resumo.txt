@@ -1,0 +1,4 @@
+Pilha
+Cujo critério de inserção e remoção é:
+LIFO: Lost In - First Out
+UEPS: Último a Entrar - Primeiro a Sair

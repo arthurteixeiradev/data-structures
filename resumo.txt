@@ -1,0 +1,210 @@
+Tipo Abstrato de Dados (TAD, em inglês Abstract Data Type) é uma abstração de um conceito matemático que
+define a estrutura de um dado e as operações que podem ser realizadas sobre ele.
+
+Alguns exemplos comuns de TADs incluem pilhas, filas, árvores, listas encadeadas e conjuntos.
+
+Cada um destes tipos define uma estrutura de dados específica e suas operações associadas, como inserção, remoção, busca e outras.
+
+Lista encadeada (Linked List): é uma estrutura de dados linear que permite adicionar e remover
+elementos em qualquer posição. É comumente usada para implementar listas dinâmicas e para resolver
+problemas de alocação de memória.
+
+Pilha (Stack): é uma estrutura de dados que permite adicionar e remover elementos apenas no topo.
+É comumente utilizada para implementar algoritmos recursivos e para resolver problemas como a avaliação de expressões matemáticas.
+
+Fila (Queue): é uma estrutura de dados que permite adicionar elementos no fim e remover elementos do início.
+É comumente usada para implementar sistemas de atendimento em ordem, como em filas de banco ou em processamento de
+tarefas em sistemas operacionais.
+
+Deque: ou fila duplamente terminada, é uma estrutura de dados dinâmica que combina as características de pilhas e filas.
+Assim como uma lista encadeada, o Deque permite adicionar e remover elementos em qualquer posição, sem restrições.
+Ao mesmo tempo, ele também oferece as funcionalidades de uma pilha, permitindo adicionar e remover elementos no topo (frente) da estrutura,
+e de uma fila, permitindo adicionar elementos no fim (cauda) e remover elementos do início.
+
+Árvore (Tree): é uma estrutura de dados hierárquica que permite representar relações de contêiner entre elementos.
+É comumente utilizada para implementar árvores de busca, como árvores de decisão e árvores de busca binárias.
+
+
+
+
+
+
+# Lista
+
+Uma Lista é um tipo abstrato de dados (TAD) que representa uma coleção de elementos, onde cada elemento tem uma posição única e conhecida.
+As listas permitem armazenar, acessar, inserir e remover elementos.
+
+As operações comuns em uma lista incluem:
+• Inserir um elemento em uma determinada posição
+• Remover um elemento em uma determinada posição
+• Acessar um elemento em uma determinada posição
+• Verificar o tamanho da lista
+• Verificar se a lista está vazia
+
+
+
+
+
+
+# Lista Estática
+
+Uma Lista Estática é uma implementação de uma lista que usa um array como estrutura de dados subjacente. Em uma Lista Estática,
+o tamanho da lista é fixo e pré-definido no momento da sua criação, e não pode ser alterado durante a execução do programa.
+Isso significa que, uma vez que o tamanho da lista é definido, não é possível adicionar ou remover elementos sem antes realocar a
+memória usada pela lista.
+
+A vantagem de uma lista estática é que ela é muito fácil de implementar e usa pouca memória dinâmica. Além disso,
+o acesso aos elementos na lista é feito em tempo constante, o que é uma vantagem em relação a outras implementações de listas.
+
+No entanto, a desvantagem de uma lista estática é que ela não é flexível quanto ao seu tamanho, o que pode levar a desperdício de
+memória ou erros de falta de memória se o tamanho da lista não for definido corretamente.
+
+
+
+
+
+
+# O que é um Array?
+
+Um array é uma estrutura de dados que armazena uma coleção de elementos do mesmo tipo, cada um identificado por um índice único.
+Em outras palavras, um array é uma sequência contígua de locais de memória que são usados para armazenar elementos.
+
+Os elementos de um array são acessados através de seus índices, que começam a partir de zero. Isso significa que, para acessar um elemento em um array,
+é necessário conhecer seu índice e usá-lo para calcular o endereço de memória do elemento.
+
+Os arrays são úteis quando é necessário armazenar e acessar uma coleção de elementos de forma eficiente, especialmente quando se precisa acessar elementos aleatoriamente.
+Além disso, os arrays são geralmente mais rápidos do que outras estruturas de dados para
+operações como pesquisa e ordenação, pois os elementos estão armazenados contiguamente na memória.
+
+Em muitas linguagens de programação, os arrays são um tipo de dados built-in e são amplamente utilizados em vários tipos de aplicações.
+
+Um tipo de dados built-in é um tipo de dados que é fornecido diretamente pelo sistema ou pelo compilador de uma linguagem de programação e não precisa ser definido ou
+implementado pelo programador. Em outras palavras, esses tipos de dados são pré-definidos e estão disponíveis para uso imediato na linguagem de programação.
+
+Exemplos de tipos de dados built-in incluem inteiros, reais, caracteres, strings e arrays. Esses tipos de dados são usados para representar diferentes tipos de dados em uma aplicação.
+Eles geralmente são otimizados para serem eficientes e se integrar perfeitamente com as operações e os recursos da linguagem de programação.
+
+Os tipos de dados built-in são diferentes dos tipos de dados definidos pelo usuário, que são definidos e implementados pelo programador para atender às necessidades específicas da aplicação.
+
+
+
+
+
+
+
+# Lista Estática Sequencial
+
+Uma Lista Estática Sequencial é uma implementação de uma lista que usa um array como estrutura de dados subjacente.
+
+O tamanho da lista é fixo e pré-definido no momento da sua criação, e não pode ser alterado durante a execução do programa.
+
+Os elementos da lista são armazenados contiguamente na memória, e o acesso aos elementos é feito através de seus índices.
+
+Uma Lista Estática Sequencial tem a vantagem de permitir o acesso rápido aos elementos, já que eles são acessados em tempo constante.
+
+No entanto, essa lista tem duas desvantagens. A primeira, relacionada ao fato de ser estática, é que ela tem um tamanho fixo que não pode ser alterado,
+o que pode resultar em desperdício de memória ou erros de falta de memória se o tamanho não for definido corretamente. A segunda desvantagem, relacionada ao
+fato dela ser sequencial, é que as operações de inserção e remoção de elementos podem ser demoradas, pois é necessário remanejar outros elementos na lista
+para alocar ou liberar espaço para o novo elemento ou o elemento removido.
+
+
+
+
+
+
+# Lista Estática Encadeada
+
+Listas Estáticas Encadeadas (Lee) são uma implementação de Lista Estática que usa uma estrutura de nós encadeados para armazenar os elementos.
+
+Em uma Lista Estática Encadeada, cada elemento é armazenado em um nó separado, que contém o elemento e um ponteiro para o próximo nó na lista.
+O acesso aos elementos na lista é feito seguindo os ponteiros de um nó ao próximo.
+
+Uma vantagem da Lista Estática Encadeada sobre a Lista Estática Sequencial é que ela pode ser facilmente modificada sem a necessidade de realocar todos os elementos no vetor.
+
+Ela também apresenta algumas desvantagens. Uma delas é que o acesso a um elemento em uma posição específica pode ser mais lento, uma vez que é necessário percorrer
+todos os nós anteriores até chegar ao nó desejado.
+
+Além disso, a alocação de memória para cada nó pode gerar um overhead adicional em termos de uso de memória.
+
+Ambas as implementações de Lista Estática – Sequencial ou Encadeada - têm suas próprias vantagens e desvantagens,
+e a escolha da implementação adequada depende das necessidades específicas da aplicação. Por exemplo, as listas estáticas
+sequenciais são geralmente mais rápidas para acessar elementos aleatoriamente, enquanto as listas estáticas encadeadas
+são mais flexíveis quanto à inserção e remoção de elementos.
+
+Entretanto, há uma desvantagem inerente às duas listas, que decorre do fato delas serem estáticas: a impossibilidade de
+crescimento da lista em tempo de execução. Será sobre isso que tralharemos no próximo capítulo.
+
+
+
+
+
+
+# Lista Dinâmica
+
+Listas dinâmicas são estruturas de dados que podem ser redimensionadas durante a execução do programa,
+permitindo adicionar ou remover elementos de forma eficiente.
+
+Como vantagens em relação às listas estáticas, especialmente a lista estática sequencial, pode-se apresentar a
+flexibilidade no tamanho, pois listas dinâmicas podem crescer ou encolher conforme a necessidade, evitando desperdício
+de memória ou restrições no número de elementos.
+
+Como desvantagens temos a sobrecarga de memória (o overhead), pois requerem armazenamento adicional para ponteiros de
+referência entre os elementos, e um acesso não tão rápido
+
+Algumas considerações importantes ao escolher uma implementação de lista dinâmica incluem frequência de operações de
+inserção e remoção, forma de acesso aos elementos, uso de memória, complexidade de implementação, necessidades específicas
+do problema etc.
+
+
+
+
+
+
+# Listas Dinâmicas Simplesmente Encadeadas
+
+Listas dinâmicas simplesmente encadeadas, também conhecidas como listas encadeadas simples ou listas de ligação simples,
+são uma estrutura de dados linear na qual cada elemento, chamado de nó, contém dois campos: um para armazenar o valor do
+dado e outro para armazenar a referência (ou ponteiro) para o próximo elemento da lista.
+
+Resumindo, a Lista Dinâmica Simplesmente Encadeada é uma estrutura de dados que possui algumas vantagens e desvantagens quando
+comparada a outras estruturas, como a Lista Estática e a Lista Dinâmica Duplamente Encadeada.
+
+Vantagens da LDSE:
+• Flexibilidade no tamanho: a LDSE pode crescer ou diminuir de tamanho dinamicamente, conforme necessário, o que evita o desperdício de espaço de memória.
+• Inserção e remoção eficientes: a inserção e remoção de elementos na LDSE podem ser realizadas em tempo constante, desde que se conheça o nó anterior ao local desejado para a operação.
+
+Desvantagens da LDSE:
+• Acesso sequencial: a LDSE não permite acesso aleatório aos elementos, tornando a busca e a recuperação de elementos menos eficientes em comparação com outras estruturas de dados.
+• Uso de memória adicional: cada nó na LDSE armazena um ponteiro adicional para o próximo elemento, aumentando o consumo de memória em comparação com estruturas mais simples.
+• Navegação unidirecional: a LDSE permite apenas a navegação para frente na lista, o que pode ser limitante em algumas situações.
+
+
+
+
+
+
+# Listas Dinâmicas Duplamente Encadeadas
+
+Listas dinâmicas duplamente encadeadas são uma variação da estrutura de dados de lista
+encadeada, na qual cada nó da lista contém dois ponteiros, um para o próximo nó e outro para
+o nó anterior na lista.
+
+Vantagens da Ldde:
+• Flexibilidade no tamanho: a lista pode crescer ou diminuir de tamanho dinamicamente, conforme necessário, o que evita o desperdício de espaço de memória.
+• Acesso bidirecional: a Ldde permite acesso aleatório aos elementos, tornando a busca e a recuperação de elementos mais eficientes em comparação com a Ldse.
+
+Desvantagens da Ldde:
+• Uso de memória adicional: cada nó na lista armazena dois ponteiros adicionais, um para o próximo elemento e outro para o elemento anterior, aumentando o consumo de memória em comparação com estruturas mais simples.
+• Implementação mais complexa: a implementação da Ldde é mais complexa do que a da Ldse, o que pode tornar sua manutenção e depuração mais difíceis em alguns casos.
+
+
+
+
+
+
+# Listas Circulares
+
+As listas circulares são uma estrutura de dados em que os elementos são organizados em um circuito fechado,
+de modo que o último elemento está conectado ao primeiro, formando uma estrutura circular.
+
+Essa estrutura pode ser implementada em listas estáticas, com um tamanho fixo, ou em listas dinâmicas, com um tamanho variável.
